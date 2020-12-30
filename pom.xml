@@ -7,14 +7,28 @@
 <artifactId>sonar-poc-prj</artifactId>
 <version>1.0-SNAPSHOT</version>
 
-<name>Example of basic Maven project for Sonar test</name>
+<name>Sonar-test</name>
 
 <!--<properties>-->
 <!--    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
 <!--    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>-->
 <!--    <maven.compiler.release>3.2</maven.compiler.release>-->
 <!--</properties>-->
-
+<properties>
+    <sonar.projectKey>
+        YourKey-${project.groupId}:${project.artifactId}
+    </sonar.projectKey>
+	<sonar.host.url>
+			http://sonarqube.directwines.internal:9000/
+	</sonar.host.url>
+  <sonar.java.binaries>
+    	./src/main/java
+    </sonar.java.binaries>
+  <sonar.java.libraries >
+    	./target/classes
+    </sonar.java.libraries >
+	</properties>
+  
 <dependencies>
     <dependency>
         <groupId>junit</groupId>
@@ -48,6 +62,16 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+          	<plugin>
+				  <groupId>org.sonarsource.scanner.maven</groupId>
+				  <artifactId>sonar-maven-plugin</artifactId>
+				  <version>3.7.0.1746</version>
+			</plugin>
+			<plugin>
+			  <groupId>org.jacoco</groupId>
+			  <artifactId>jacoco-maven-plugin</artifactId>
+			  <version>0.8.6</version>
+			</plugin>
         </plugins>
         <!--<plugins>
             <plugin>
