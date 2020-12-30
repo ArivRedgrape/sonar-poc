@@ -15,19 +15,11 @@
 <!--    <maven.compiler.release>3.2</maven.compiler.release>-->
 <!--</properties>-->
 <properties>
-    <sonar.projectKey>
-        YourKey-${project.groupId}:${project.artifactId}
-    </sonar.projectKey>
-	<sonar.host.url>
-			http://sonarqube.directwines.internal:9000/
-	</sonar.host.url>
-  <sonar.java.binaries>
-    	./target/classes
-    </sonar.java.binaries>
-  <sonar.java.libraries >
-    	./target/classes
-    </sonar.java.libraries >
-	</properties>
+    <sonar.projectKey>YourKey-${project.groupId}:${project.artifactId}</sonar.projectKey>
+    <sonar.host.url>http://sonarqube.directwines.internal:9000/</sonar.host.url>
+    <sonar.java.binaries>./target/classes</sonar.java.binaries>
+    <sonar.java.libraries>./target/classes</sonar.java.libraries >
+</properties>
   
 <dependencies>
     <dependency>
