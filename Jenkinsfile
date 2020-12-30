@@ -36,7 +36,7 @@ pipeline {
           steps {
             script {
               sh '''
-				mvn clean verify sonar:sonar -Dsonar.login=4cdad4eb72568a6e26cf72048b54a89e79703e04
+				mvn clean verify sonar:sonar -Dsonar.login=4cdad4eb72568a6e26cf72048b54a89e703e04
 			  '''
             }
 
