@@ -22,7 +22,7 @@
 			http://sonarqube.directwines.internal:9000/
 	</sonar.host.url>
   <sonar.java.binaries>
-    	./src/main/java
+    	./target/classes
     </sonar.java.binaries>
   <sonar.java.libraries >
     	./target/classes
