@@ -14,7 +14,7 @@ import java.util.zip.GZIPOutputStream;
 
 /**
  * A file servlet supporting resume of downloads and client-side caching and GZIP of text content. This servlet can also be used for images,
- * client-side caching would become more efficient. This servlet can also be used for text files, GZIP would decrease network bandwidth. tes sdf
+ * client-side caching would become more efficient. This servlet can also be used for text files, GZIP would decrease network bandwidth. 
  * 
  * @author BalusC
  * @link http://balusc.blogspot.com/2009/02/fileservlet-supporting-resume-and.html sfsfg
